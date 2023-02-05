@@ -101,7 +101,9 @@ THEN I am prompted to select an employee to update and their new role and this i
 <br>
 
 ### 📚 Useful resources
-
+- MySQL2 Package:  [https://www.npmjs.com/package/mysql2](https://www.npmjs.com/package/mysql2)
+- Inquirer Package:  [https://www.npmjs.com/package/inquirer/v/8.2.4](https://www.npmjs.com/package/inquirer/v/8.2.4)
+- console.table Package:  [https://www.npmjs.com/package/console.table](https://www.npmjs.com/package/console.table)
 - Emojis: [https://github.com/ikatyang/emoji-cheat-sheet#office](https://github.com/ikatyang/emoji-cheat-sheet#office)
 ​
 
