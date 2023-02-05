@@ -63,6 +63,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 ## 👤 User Experience
 1. Open command line.
 2. Install and use Inquirer version 8.2.4 by using the following command in the project folder: `npm i inquirer@8.2.4.`
+3. Install and use MySQL2 by using the following command in the project folder: `npm install --save mysql2`
 
 <br>
 <hr>
