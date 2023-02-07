@@ -1,18 +1,26 @@
-INSERT INTO favorite_books (book_name, section, in_stock, quantity)
-VALUES ("The Great Gatsby", 1, true, 11),
-       ("Huckleberry Finn", 1, true, 4),
-       ("100 Years of Solitude", 3, false, 0),
-       ("Things Fall Apart", 4 , false, 0 ),
-       ("Crime and Punishment", 1, true, 15),
-       ("Moby Dick", 2, true, 11),
-       ("Decameron", 5, false, 0),
-       ("The Wind and the Willows", 2, true, 11),
-       ("Ulysses", 3, true, 8),
-       ("Madame Bovary", 4 , true, 9 ),
-       ("Catcher in the Rye", 1, true, 23),
-       ("Catch-12", 5, true, 18),
-       ("Hamlet", 5, true, 14);
-       
 -- DEPARTMENT SEEDS
+INSERT INTO department (id, name) VALUES (1, 'Engineering');
+INSERT INTO department (id, name) VALUES (2, 'Sales');
+INSERT INTO department (id, name) VALUES (3, 'Finance');
+INSERT INTO department (id, name) VALUES (4, 'Legal');
+INSERT INTO department (id, name) VALUES (5, 'Human Rescources');
+
 -- ROLE SEEDS
+INSERT INTO role (title, salary, departmentID) VALUES ("Sales Lead", 150000, 1);
+INSERT INTO role (title, salary, departmentID) VALUES ("Sales Mgr.", 138500, 2);
+INSERT INTO role (title, salary, departmentID) VALUES ("Online Sales Rep.", 112000, 2);
+INSERT INTO role (title, salary, departmentID) VALUES ("Print Sales Rep.", 143000, 2);
+INSERT INTO role (title, salary, departmentID) VALUES ("Accountant", 138000, 3);
+INSERT INTO role (title, salary, departmentID) VALUES ("Lawyer", 145000, 4);
+INSERT INTO role (title, salary, departmentID) VALUES ("Operations Mgr.", 145000, 4);
+INSERT INTO role (title, salary, departmentID) VALUES ("HR Coordinator", 110000, 5);
+
 -- EMPLOYEE SEEDS
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Michael', 'Scott',1, null );
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Jim', 'Halpert', 2, 1);
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Stanley', 'Hudson', 3, 1);
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Oscar', 'Martinez', 4, 5);
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Toby', 'Flenderson', 5, null);
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Kevin', 'Malone',6, null);
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Pam', 'Beasley', 7, 1);
+INSERT INTO employees (firstName, lastName, roleID, managerID) VALUES ('Dwight', 'Schrute',8, 1 );

@@ -62,8 +62,15 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## 👤 User Experience
 1. Open command line.
-2. Install and use Inquirer version 8.2.4 by using the following command in the project folder: `npm i inquirer@8.2.4.`
-3. Install and use MySQL2 by using the following command in the project folder: `npm install --save mysql2`
+2. Install `npm i` to install your NPM package manager and required dependencies.
+3. Install and use Inquirer version 8.2.4 by using the following command in the project folder: `npm i inquirer@8.2.4.`
+4. Install and use MySQL2 by using the following command in the project folder: `npm install --save mysql2`
+5. Install `npm i dotenv` to store environmental variables.
+6. Install `npm i console` to print MySQL rows to the console.
+7. Run command `mysql -u -root -p` to initilize MySQL, then type username and password to login.
+8. Run command `npm start` or `node server.js` to start.
+9. Follow prompts.
+10. Run command `quit` to exit the application.
 
 <br>
 <hr>
