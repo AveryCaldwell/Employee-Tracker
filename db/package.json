@@ -1,6 +1,17 @@
 {
-  "dependencies": {
-    "inquirer": "^8.2.4",
-    "mysql2": "^3.1.0"
-  }
+    "name": "employee-tracker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "start": "node index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./server.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "inquirer": "^8.2.4",
+        "mysql2": "^3.1.0"
+    }
 }
