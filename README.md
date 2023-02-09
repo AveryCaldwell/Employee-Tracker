@@ -3,15 +3,15 @@
 <br>
 
 ## Table of contents
-- [Description](#description)
-- [Overview](#overview)
-  - [User experience](#user-experience)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Description](#📝-description)
+- [Overview](#📁-overview)
+  - [User experience](#👤-user-experience)
+  - [Screenshot](#📸-screenshot)
+  - [Links](#🔗-links)
+- [My process](#💡-my-process)
+  - [Built with](#🔨-built-with)
+  - [Useful resources](#📚-useful-resources)
+- [Author](#author-✏️)
 
 <br>
 <br>
@@ -68,7 +68,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 5. Install `npm i dotenv` to store environmental variables.
 6. Install `npm i console.table` to print MySQL rows to the console.
 7. Run command `mysql -u -root -p` to initilize MySQL, then type username and password to login.
-8. Run command `npm start` or `node server.js` to start.
+8. Run command `npm run start` or `node server.js` to start.
 9. Follow prompts.
 10. Run command `quit` to exit the application.
 
@@ -78,13 +78,13 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## 📸 Screenshot 
 ​<br>
-![](./assets/images/screenshot.png)
+![](./db/assets/images/screenshot.png)
 ​
 <hr>
 <br>
 
 ## 🔗 Links 
-- Live URL: []()
+- Live URL: [https://watch.screencastify.com/v/VsSvyhIgvLkT3GcRarLN](https://watch.screencastify.com/v/VsSvyhIgvLkT3GcRarLN)
 - GitHub Repo: [https://github.com/AveryCaldwell/Employee-Tracker](https://github.com/AveryCaldwell/Employee-Tracker)
 
 
@@ -105,6 +105,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 - Node.js
 - Inquirer
 - MySQL
+- console.table
 
 <br>
 
@@ -112,7 +113,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 - MySQL2 Package:  [https://www.npmjs.com/package/mysql2](https://www.npmjs.com/package/mysql2)
 - Inquirer Package:  [https://www.npmjs.com/package/inquirer/v/8.2.4](https://www.npmjs.com/package/inquirer/v/8.2.4)
 - console.table Package:  [https://www.npmjs.com/package/console.table](https://www.npmjs.com/package/console.table)
-- Emojis: [https://github.com/ikatyang/emoji-cheat-sheet#office](https://github.com/ikatyang/emoji-cheat-sheet#office)
+- Emojis: [https://github.com/ikatyang/emoji-cheat-sheet#office](https://github.com/ikatyang/emoji-cheat-sheet)
 ​
 
 <br>
