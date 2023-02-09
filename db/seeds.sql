@@ -1,3 +1,4 @@
+-- Clear out the table entries for testing
 delete from role where id between 0 and 99;
 delete from employee where id between 0 and 99;
 Delete from department where id between 0 and 99;
