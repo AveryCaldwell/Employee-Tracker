@@ -17,9 +17,15 @@ const connection = mysql.createConnection(
     },
     console.log(`Connected to the employee database.`)
 );
-console.table('\n------------ EMPLOYEE TRACKER ------------\n');
+console.table(`
+
+█▀▀ █▀▄▀█ █▀▀█ █░░ █▀▀█ █░░█ █▀▀ █▀▀ 　 ▀▀█▀▀ █▀▀█ █▀▀█ █▀▀ █░█ █▀▀ █▀▀█ 
+█▀▀ █░▀░█ █░░█ █░░ █░░█ █▄▄█ █▀▀ █▀▀ 　 ░░█░░ █▄▄▀ █▄▄█ █░░ █▀▄ █▀▀ █▄▄▀ 
+▀▀▀ ▀░░░▀ █▀▀▀ ▀▀▀ ▀▀▀▀ ▄▄▄█ ▀▀▀ ▀▀▀ 　 ░░▀░░ ▀░▀▀ ▀░░▀ ▀▀▀ ▀░▀ ▀▀▀ ▀░▀▀
+`);
 
 // QUERY functions
+// Query to view data
 const sqlSelectQuery = (query, success, table) => {
     connection.query({ sql: query }, function (err, results) {
         if (err) {
@@ -42,6 +48,7 @@ const sqlSelectQuery = (query, success, table) => {
         appStart();
     });
 };
+// Query to edit data
 const sqlEditQuery = (query, success) => {
     connection.query({ sql: query }, function (err, results) {
         if (err) {
@@ -52,6 +59,7 @@ const sqlEditQuery = (query, success) => {
         success;
     });
 };
+// Query to delete data
 const sqlDeleteQuery = (query, success) => {
     connection.query({ sql: query }, function (err, results) {
         if (err) {
@@ -61,6 +69,7 @@ const sqlDeleteQuery = (query, success) => {
         success;
     });
 };
+// Query to update data
 const sqlUpdateQuery = (query, success) => {
     connection.query({ sql: query }, function (err, results) {
         if (err) {
@@ -110,7 +119,6 @@ const addDepartment = () => {
             viewDepartments();
         });
 };
-
 const addRole = () => {
     let departmentObj = {};
     let departmentList = [];
@@ -154,7 +162,6 @@ const addRole = () => {
             viewRoles();
         });
 };
-
 const addEmployee = (first_name, last_name, role_id, manager_id) => {
     let rolesObj = {};
     let rolesList = [];
@@ -440,6 +447,7 @@ const updateEmployee = (first_name, last_name, role_id, id, role_title) => {
         }
     );
 };
+// Sum of employees salaries by department
 const viewBudgetByDepartment = () => {
     let departmentObj = {};
     let departmentList = [];
@@ -489,6 +497,7 @@ const viewBudgetByDepartment = () => {
         }
     );
 };
+// Start the prompt
 const appStart = () => {
     inquirer
         .prompt([
@@ -528,7 +537,6 @@ const appStart = () => {
                     viewBudgetByDepartment();
                     break;
                 case 'Add a department':
-                    // console.log('add a department success');
                     addDepartment();
                     break;
                 case 'Add a role':
