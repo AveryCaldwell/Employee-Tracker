@@ -12,6 +12,7 @@
   - [Built with](#🔨-built-with)
   - [Useful resources](#📚-useful-resources)
 - [Author](#author-✏️)
+   - [Grade](#grade)
 
 <br>
 <br>
